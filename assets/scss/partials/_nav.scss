@@ -15,6 +15,7 @@
 
   .echo__sub-nav {
     padding-left: 10px;
+    display: none;
 
     a {
       font-size: 14px;
@@ -23,5 +24,9 @@
 
   .echo__section-nav-link + .echo__section-nav-part {
     margin-top: 20px;
+  }
+
+  .echo__section-nav-part:hover + .echo__sub-nav {
+    display: block;
   }
 }

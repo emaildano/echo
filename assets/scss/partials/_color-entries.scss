@@ -8,7 +8,7 @@
   &-wrapper {
     padding: 12px;
     width: 18%;
-    border: 1px solid $echo-text;
+    border: 1px solid $echo-border-color;
     float: left;
     margin-right: (2% + ( 2% / 4 ) );
     margin-bottom: 30px;
@@ -32,6 +32,7 @@
     line-height: 1.25;
     font-size: 90%;
     padding: 15px 0;
+    color: $echo-text-color;
 
     span {
       display: block;

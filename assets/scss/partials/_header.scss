@@ -2,7 +2,12 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid $echo-text;
-  background-color: $echo-bkg;
+  background-color: $echo-background-dark;
+
+  @media screen and (min-width: 600px) {
+    display: flex;
+    align-items: center;
+  }
 
   h1.echo, h2.echo {
     margin-bottom: 0;
@@ -17,18 +22,11 @@
     color: $echo-white;
   }
 
-  .echo__container {
-    @media screen and (min-width: 600px) {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  &-logo,
-  &-tagline {
+  &-logo {
+    padding-left: 5%;
 
     @media screen and (min-width: 600px) {
-      width: 50%;
+      width: 25%;
     }
   }
 }

@@ -23,21 +23,24 @@ collections:
 
 echo-colors:
   -
-    name: '$black'
-    hex: '#000'
-  -
-    name: '$white'
-    hex: '#fff'
-  -
-    name: '$echo-text'
-    hex: '#616161'
-  -
-    name: '$echo-bkg'
-    hex: '#2632385'
-  -
-    name: '$red'
+    name: '$echo-brand-color'
     hex: '#D84315'
   -
-    name: '$yellow'
-    hex: '#FFD600'
+    name: '$echo-black'
+    hex: '#212121'
+  -
+    name: '$echo-white'
+    hex: '#FFFFFF'
+  -
+    name: '$echo-background-dark'
+    hex: '#263238'
+  -
+    name: '$echo-text-color'
+    hex: '#616161'
+  -
+    name: '$echo-text-highlight-color'
+    hex: '#D84315'
+  -
+    name: '$echo-border-color'
+    hex: '#BDBDBD'
 
