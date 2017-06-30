@@ -1,0 +1,10 @@
+{% comment %}<!-- Colors in config.yml -->{% endcomment %}
+
+{% for entry in site.echo-colors %}
+  <div class="echo__color-wrapper">
+    <div class="echo__color-swatch" style="background-color: {{ entry.hex }}"></div>
+    <div class="echo__color-title">
+      <p>{{ entry.name }} <span>{{ entry.hex }}</span></p>
+    </div>
+  </div>
+{% endfor %}

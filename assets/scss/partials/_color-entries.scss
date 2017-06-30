@@ -1,0 +1,42 @@
+.echo__color {
+  overflow: hidden;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &-wrapper {
+    padding: 12px;
+    width: 18%;
+    border: 1px solid $echo-text;
+    float: left;
+    margin-right: (2% + ( 2% / 4 ) );
+    margin-bottom: 30px;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(5n+1) {
+      clear: left;
+    }
+  }
+
+  &-swatch {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+
+  &-title {
+    font-weight: 600;
+    line-height: 1.25;
+    font-size: 90%;
+    padding: 15px 0;
+
+    span {
+      display: block;
+      font-weight: 400;
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+.echo__footer {
+  background-color: $echo-bkg;
+  padding: 50px 0 80px;
+  color: $echo-white;
+
+  .echo__container {
+    display: flex;
+  }
+
+  h5,
+  a {
+    width: 50%;
+
+    span {
+      color: $echo-brand-color;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    color: $echo-white;
+    text-decoration: none;
+    display: block;
+  }
+}

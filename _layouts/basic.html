@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% include _global/head.html %}
+<body class="echo__body">
+
+  {% include _global/header.html %}
+
+  <section class="echo__main">
+
+    {% include _global/sidebar.html %}
+
+    <main class="echo__main-content">
+      {{ content }}
+    </main>
+
+  </section>
+
+  {% include _global/footer.html %}
+
+</body>
+</html>

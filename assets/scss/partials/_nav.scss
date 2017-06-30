@@ -1,0 +1,27 @@
+.echo__section-nav {
+
+  a {
+    display: block;
+    margin-bottom: 5px;
+    color: $echo-text;
+    text-decoration: none;
+
+    &.echo__section-nav-part {
+      font-weight: 700;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+  }
+
+  .echo__sub-nav {
+    padding-left: 10px;
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .echo__section-nav-link + .echo__section-nav-part {
+    margin-top: 20px;
+  }
+}

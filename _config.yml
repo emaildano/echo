@@ -1,0 +1,43 @@
+# Site Definitions
+title: 'Echo'
+url: 'http://echo.dev' # the base hostname & protocol for your site, e.g. http://example.com
+basecss: '' # link to base site css
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - gulpfile.js
+
+collections:
+  echo-inline:
+    output: false
+  echo-block:
+    output: false
+  echo-layout:
+    output: false
+  echo-components:
+    output: false
+
+echo-colors:
+  -
+    name: '$black'
+    hex: '#000'
+  -
+    name: '$white'
+    hex: '#fff'
+  -
+    name: '$echo-text'
+    hex: '#616161'
+  -
+    name: '$echo-bkg'
+    hex: '#2632385'
+  -
+    name: '$red'
+    hex: '#D84315'
+  -
+    name: '$yellow'
+    hex: '#FFD600'
+
