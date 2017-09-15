@@ -1,0 +1,32 @@
+.echo__header {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid $echo-text-color;
+  background-color: $echo-background-dark;
+
+  @media screen and (min-width: 600px) {
+    display: flex;
+    align-items: center;
+  }
+
+  h1.echo, h2.echo {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    color: $echo-brand-color;
+  }
+
+  h2 {
+    opacity: 0.75;
+    color: $echo-white;
+  }
+
+  &-logo {
+    padding-left: 5%;
+
+    @media screen and (min-width: 600px) {
+      width: 25%;
+    }
+  }
+}

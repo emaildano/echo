@@ -1,0 +1,13 @@
+// Basic Wrapper
+.echo__container {
+  @include base-container(90%);
+}
+
+// Main Content
+.echo__main {
+  margin: 50px 0;
+
+  @include break($medium) {
+    margin: 100px 0;
+  }
+}

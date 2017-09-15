@@ -2,29 +2,48 @@
 layout: basic
 ---
 
+{% if site.echo-about %}
+  <section id="echo-about" class="echo__color echo__section">
+    <h2 class="echo__section-title">About</h2>
+    <div>
+      <p class="echo">{{ site.echo-about }}</p>
+    </div>
+  </section>
+{% endif %}
+
 <section id="echo-colors" class="echo__color echo__section">
-  <h2 class="echo__section-title">Colors</h2>
-  <div>
-    {% include _sections/colors.html %}
+  <div class="echo__container">
+    <h2 class="echo__section-title">Colors</h2>
+    <div>
+      {% include _sections/colors.html %}
+    </div>
   </div>
 </section>
 
-<section id="echo-inline" class="echo__inline echo__section">
-  <h2 class="echo__section-title">Inline</h2>
-  {% include _sections/inline.html %}
+<section id="echo-typography" class="echo__block echo__section">
+  <div class="echo__container">
+    <h2 class="echo__section-title">Typography</h2>
+    {% include _sections/Typography.html %}
+  </div>
 </section>
 
-<section id="echo-block" class="echo__block echo__section">
-  <h2 class="echo__section-title">Block</h2>
-  {% include _sections/block.html %}
+<section id="echo-images" class="echo__block echo__section">
+  <div class="echo__container">
+    <h2 class="echo__section-title">Images</h2>
+    {% include _sections/Images.html %}
+  </div>
 </section>
 
-<section id="echo-layout" class="echo__layout echo__section">
-  <h2 class="echo__section-title">Layout</h2>
-  {% include _sections/layout.html %}
+<section id="echo-modules" class="echo__layout echo__section">
+  <div class="echo__container">
+    <h2 class="echo__section-title">Modules</h2>
+    {% include _sections/modules.html %}
+  </div>
 </section>
 
 <section id="echo-components" class="echo__component echo__section">
-  <h2 class="echo__section-title">Components</h2>
+  <div class="echo__container">
+    <h2 class="echo__section-title">Components</h2>
+  </div>
   {% include _sections/components.html %}
 </section>

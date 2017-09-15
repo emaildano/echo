@@ -1,0 +1,31 @@
+// Basic colors
+$echo-black: #212121;
+$echo-white: #FFFFFF;
+$echo-gray-light: #f7f8fa;
+$echo-gray-dark: #797a7a;
+
+// Echo default colors:
+$echo-red: #fc3a3d;
+$echo-blue: #144768;
+
+// Main color
+$echo-brand-color: $echo-red;                       // red
+
+// Darks Backgrounds
+$echo-background-dark: $echo-blue;
+
+// Default text color
+$echo-text-color: $echo-blue;
+
+// Alternate text color
+$echo-text-alt-color: $echo-gray-dark;
+
+// Border color
+$echo-border-color: $echo-text-alt-color;
+
+// Monospace Font Family
+$mono: 'Fira Mono', Consolas, monospace;
+
+// Font Weights
+$echo-font-weight-normal: 400;
+$echo-font-weight-strong: 600;

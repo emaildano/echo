@@ -1,0 +1,11 @@
+{% for echo-typography in site.echo-typography %}
+  <section class="echo__subsection echo__subsection-typography" id="section-{{ echo-typography.title  | url_encode | downcase }}">
+    <h1 class="echo echo__subsection-title">{{ echo-typography.title }}</h1>
+    {% if echo-typography.description %}
+      <div class="echo__subsection-desc"><p>{{ echo-typography.description }}</p></div>
+    {% endif %}
+    <div class="echo__subsection-content">
+      {{ echo-typography.content }}
+    </div>
+  </section>
+{% endfor %}

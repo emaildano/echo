@@ -1,0 +1,56 @@
+.echo__header {
+  border-bottom: 1px solid $echo-border-color;
+  background-color: $echo-background-dark;
+  padding: 15px 0;
+
+  @include break($medium) {
+    // height: 75px;
+  }
+
+  &-row {
+
+    @include break($medium) {
+      @include flex-row;
+    }
+  }
+
+  h1.echo, h2.echo {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  h1 {
+    color: $echo-brand-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @include break($small) {
+      margin-bottom: 20px;
+    }
+
+    @include break($medium) {
+      padding: 20px 0;
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    opacity: 0.5;
+    color: $echo-white;
+  }
+
+  &-logo {
+    @include break($medium) {
+      @include flex-grid-col(4);
+    }
+  }
+
+  &-tagline {
+    @include break($medium) {
+      @include flex-grid-col(8);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}

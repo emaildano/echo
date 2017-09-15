@@ -1,0 +1,1 @@
+{"version":3,"sources":["style-guide/partials/global.scss"],"names":[],"mappings":"AAAA,EACE,qBAAsB,CACvB","file":"styles.css","sourcesContent":["* {\n  box-sizing: border-box;\n}\n"]}

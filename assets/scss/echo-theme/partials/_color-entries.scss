@@ -1,0 +1,58 @@
+.echo__color {
+  overflow: hidden;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &-wrapper {
+    @include grid-col(6);
+    @include grid-zed(2n);
+    margin-bottom: 20px;
+
+    @include break($xsmall) {
+      @include grid-zed-reset(2n);
+      @include grid-col(4);
+      @include grid-zed(3n);
+    }
+
+
+    @include break($small) {
+      @include grid-zed-reset(3n);
+      @include grid-col(3);
+      @include grid-zed(4n);
+    }
+
+    @include break($medium) {
+      @include grid-zed-reset(4n);
+      @include grid-col(2);
+      @include grid-zed(6n);
+    }
+  }
+
+  &-swatch {
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+  }
+
+  &-title {
+    font-weight: 600;
+    line-height: 1.25;
+    font-size: 90%;
+    padding: 15px 0;
+    color: $echo-text-color;
+
+    span {
+      display: block;
+      font-weight: 400;
+    }
+  }
+
+  &-class {
+    height: 50px;
+    @include grid-col(4, $no-margin-grid);
+
+  }
+
+}

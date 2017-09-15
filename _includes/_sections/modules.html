@@ -1,0 +1,11 @@
+{% for echo-modules in site.echo-modules %}
+  <section class="echo__subsection echo__subsection-typography" id="section-{{ echo-modules.title | url_encode | downcase }}">
+    <h1 class="echo echo__subsection-title">{{ echo-modules.title }}</h1>
+    {% if echo-modules.description %}
+      <div class="echo__subsection-desc"><p>{{ echo-modules.description }}</p></div>
+    {% endif %}
+    <div class="echo__subsection-content">
+      {{ echo-modules.content }}
+    </div>
+  </section>
+{% endfor %}

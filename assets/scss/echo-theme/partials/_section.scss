@@ -1,0 +1,29 @@
+// Top Level Section
+.echo__section {
+  margin: 50px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &-title {
+    font-weight: 600;
+    color: $echo-brand-color;
+    font-size: 24px;
+    text-align: right;
+    line-height: 1.2;
+  }
+}
+
+// Section Description
+.echo__description {
+  font-family: $mono;
+  font-style: italic;
+  font-size: 12px;
+  color: $echo-gray-dark;
+  margin-bottom: 15px;
+
+  & + & {
+    margin-top: -10px;
+  }
+}

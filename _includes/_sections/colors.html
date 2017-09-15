@@ -1,10 +1,25 @@
 {% comment %}<!-- Colors in config.yml -->{% endcomment %}
+<div class="row">
+  {% for entry in site.echo-colors %}
+    <div class="echo__color-wrapper">
+      <div class="echo__color-swatch" style="background-color: {{ entry.hex }}"></div>
+      <div class="echo__color-title">
+        <p>{{ entry.name }} <span>{{ entry.hex }}</span></p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
-{% for entry in site.echo-colors %}
-  <div class="echo__color-wrapper">
-    <div class="echo__color-swatch" style="background-color: {{ entry.hex }}"></div>
-    <div class="echo__color-title">
-      <p>{{ entry.name }} <span>{{ entry.hex }}</span></p>
+{% comment %}<!-- Uncomment to add custom color section -->
+<section class="echo__subsection echo__subsection-typography">
+  <h1 class="echo echo__subsection-title">Title</h1>
+  <div class="echo__subsection-desc"><p>Description</code></p></div>
+  <div class="echo__subsection-content">
+    <div class="echo__example-wrapper">
+      <div class="echo__example">
+        <!-- Stuff -->
+      </div>
     </div>
   </div>
-{% endfor %}
+</section>
+{% endcomment %}

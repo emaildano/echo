@@ -1,0 +1,11 @@
+{% for echo-image in site.echo-images %}
+  <section class="echo__subsection echo__subsection-image" id="section-{{ echo-image.title  | url_encode | downcase }}">
+    <h1 class="echo echo__subsection-title">{{ echo-image.title }}</h1>
+    {% if echo-image.description %}
+      <div class="echo__subsection-desc"><p>{{ echo-image.description }}</p></div>
+    {% endif %}
+    <div class="echo__subsection-content">
+      {{ echo-image.content }}
+    </div>
+  </section>
+{% endfor %}

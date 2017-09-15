@@ -1,0 +1,48 @@
+code {
+  color: $echo-brand-color;
+  font-family: $mono;
+  background-color: $echo-gray-light;
+  padding: 3px;
+  display: inline-block;
+}
+
+.echo__code-display {
+  display: none;
+}
+
+.echo__button {
+  @include button-reset();
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $mono;
+  display: block;
+  width: 100%;
+  text-align: center;
+  -webkit-appearance: none;
+  margin-top: 20px;
+}
+
+.echo__toggle-code-display {
+
+  &:after {
+    content: '\021A7';
+    display: block;
+    text-align: center;
+    margin-top: -5px;
+  }
+
+  &.open {
+    &:after {
+      content: '\021A5';
+    }
+  }
+}
+
+.echo__code-section {
+  margin-top: 50px;
+}
+
+.echo__example-wrapper + .echo__example-wrapper {
+  margin-top: 70px;
+}

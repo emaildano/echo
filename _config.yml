@@ -1,7 +1,7 @@
 # Site Definitions
 title: 'Echo'
+tagline: 'Style Sherpa'
 url: 'http://echo.dev' # the base hostname & protocol for your site, e.g. http://example.com
-basecss: '' # link to base site css
 
 # Build settings
 exclude:
@@ -12,11 +12,11 @@ exclude:
   - gulpfile.js
 
 collections:
-  echo-inline:
+  echo-typography:
     output: false
-  echo-block:
+  echo-images:
     output: false
-  echo-layout:
+  echo-modules:
     output: false
   echo-components:
     output: false
@@ -38,9 +38,10 @@ echo-colors:
     name: '$echo-text-color'
     hex: '#616161'
   -
-    name: '$echo-text-highlight-color'
+    name: '$echo-text-alt-color'
     hex: '#D84315'
   -
     name: '$echo-border-color'
     hex: '#BDBDBD'
 
+echo-about: false

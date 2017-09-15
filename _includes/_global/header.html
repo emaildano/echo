@@ -1,8 +1,30 @@
 <header class="echo__header">
-  <div class="echo__header-logo">
-    <h1 class="echo">Echo</h1>
-  </div>
-  <div class="echo__header-tagline">
-    <h2 class="echo">Style Sherpa</h2>
+  <div class="echo__container">
+    <div class="echo__header-row">
+
+      <div class="echo__header-logo">
+        <h1 class="echo">{{ site.title }}</h1>
+        {% if site.tagline != false %}
+        <span class="echo__tagline">Style Sherpa</h2>
+        {% endif %}
+      </div>
+
+      <div class="echo__header-nav">
+        {% include _vars/parts-array.html %}
+        <nav class="echo__nav">
+          {% for part in parts %}
+            <div class="echo__nav-section">
+              <a class="echo__nav-section-link" href="#{{ part }}">{{ part | replace: 'echo-', '' | capitalize }} </a>
+              <div class="echo__nav-subsection {{ part }}">
+                {% for entry in site.[part] %}
+                  <a class="echo__nav-subsection-link" href="#section-{{ entry.title | downcase | url_encode }}">{{ entry.title }}</a>
+                {% endfor %}
+              </div>
+            </li>
+          {% endfor %}
+        </nav>
+      </div>
+
+    </div>
   </div>
 </header>
