@@ -31,4 +31,4 @@ To spin up a local server:
 The default `gulp` task can be ran with a production flag to uglify js and minify css: `gulp --production`.
 
 ## Questions?
-Contact sbaer@j2made.com
+Contact sbarros@j2made.com
